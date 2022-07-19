@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #3A3A3A;
+}
+/* font-family: 'Poppins', sans-serif; */
+ul{
+    list-style-type: none;
+}
+li{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1000px;
+    margin: 80px auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.logo-title a{
+    font-size: 24px;
+    font-weight: 700px;
+}
+ul li a{
+    padding-right: 20px;
+    font-size: 16px;
+    font-weight: 600px;
+}
+.btn{
+    background-color: rgb(240, 105, 127);
+    border: none;
+    padding: 6px 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+}
+.banners{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+.banner-1{
+    width: 60%;
+}
+.banner-1 h2, p{
+    padding-right: 30px;
+}
+.banner-1 h2{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 70px;
+}
+.banner-2{
+    width: 40%;
+    background-image: url(./images/Circle\ design.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.banner-2 img{
+    width: 100%;
+}
+.company-name{
+    display: flex;
+    justify-content: space-evenly;
+}
+/* top banner ended */
+hr{
+    margin: 40px 0;
+}
+/* middle page started */
+.product-detail{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.product-detail div{
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.product-info{
+    padding: 10px;
+}
+.product-detail img{
+    width: 100%;
+}
+.middle-heading{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+.see{
+    display: flex;
+    justify-content: end;
+    padding: 10px 0px;
+    color: coral;
+}
+/* middle page ended */
+.bottom-page{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+}
+.bottom-img{
+    width: 50%;
+}
+.bottom-text{
+    width: 50%;
+}
+.bottom-text h2{
+    font-size: 30px;
+}
+.bottom-text {
+    font-size: 16px;
+}
