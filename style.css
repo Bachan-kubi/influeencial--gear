@@ -25,6 +25,9 @@ a{
     justify-content: space-between;
     align-items: flex-end;
 }
+.logo-title i{
+    display: none;
+}
 .logo-title a{
     font-size: 24px;
     font-weight: 700px;
@@ -138,6 +141,74 @@ footer{
 Media Query
  */
 
- @media screen and (max-width: 576px) {
-    
+ @media only screen and (max-width: 688px) {
+    .container{
+        width: 100%;
+    }
+    .top-section{
+        background-color: aqua;
+    }
+    .logo-title i{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+    .product-detail{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .product-info{
+        padding: 15px;
+    }
+    .product-info img{
+        width: 100%;
+        /* padding: 20px; */
+    }
+    .product-info h2, p{
+        text-align: center;
+    }
+    .product-info h2{
+        font-size: 40px;
+    }
+    .see{
+        margin-right: 25px;
+        font-size: 20px;
+        padding-top: 20px;
+    }
+    .see i{
+        padding-right: 4px;
+        padding-top: 6px;
+        color: coral;
+    }
+    .see h4{
+        padding-right: 8px;
+        padding-top: 6px;
+        color: coral;
+    }
+ }
+
+ @media only screen and (min-width: 689px) and (max-width: 992px){
+    /* .container{
+        width: 100%;
+    } */
+    nav{
+        display: block;
+    }
+    .product-detail{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .product-info img{
+        width: 100%;
+    }
+    .product-info h2, p{
+        text-align: center;
+    }
+    .product-info h2{
+        font-size: 25px;
+    }
+    footer{
+        width: 100%;
+    }
  }
