@@ -76,6 +76,10 @@ ul li a{
     justify-content: space-evenly;
 }
 /* top banner ended */
+/* responsive last header */
+.last-header-section{
+    display: none;
+}
 hr{
     margin: 40px 0;
 }
@@ -146,7 +150,7 @@ Media Query
         width: 100%;
     }
     .top-section{
-        background-color: aqua;
+        /* background-color: aqua; */
     }
     .logo-title i{
         display: block;
@@ -154,6 +158,27 @@ Media Query
     nav{
         display: none;
     }
+    /* last header */
+    
+    .last-header{
+        display: none;
+    }
+    .last-header-section{
+        display: block;
+    }
+    .last-header-r{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        /* colomn-gap: 50px */
+    }
+    /* .product-logo{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    } */
+    /* last header ended */
     .product-detail{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -170,6 +195,21 @@ Media Query
     }
     .product-info h2{
         font-size: 40px;
+    }
+    .bottom-page{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .bottom-text h2, p{
+        text-align: center;
+    }
+    .bottom-text h2{
+        font-size: 30px;
+    }
+    .bottom-text btn{
+        text-align: center;
     }
     .see{
         margin-right: 25px;
@@ -189,9 +229,9 @@ Media Query
  }
 
  @media only screen and (min-width: 689px) and (max-width: 992px){
-    /* .container{
+    .container{
         width: 100%;
-    } */
+    }
     nav{
         display: block;
     }
