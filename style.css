@@ -140,7 +140,10 @@ footer{
 .footer-text p{
     color: white;  
 }
-
+/* responsive part */
+.logo-title-1{
+    display: none;
+}
 /* -----------------  
 Media Query
  */
@@ -149,9 +152,30 @@ Media Query
     .container{
         width: 100%;
     }
-    .top-section{
-        /* background-color: aqua; */
+    /* .top-section{
+        background-color: aqua;
+    } */
+    .logo-title{
+        display: none;
     }
+    .logo-title-1{
+        display: block;
+        width: 100%;
+    }
+    .logo-title-r{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .logo-title-r i, a{
+        font-size: 30px;
+    }
+    /* responsive logo */
+    /* responsive banner start */
+    .banners{
+        display: none;
+    }
+    /* responsive banner start */
     .logo-title i{
         display: block;
     }
@@ -165,19 +189,18 @@ Media Query
     }
     .last-header-section{
         display: block;
+        margin-top: 80px;
     }
     .last-header-r{
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 50px;
+        gap: 40px;
         /* colomn-gap: 50px */
     }
-    /* .product-logo{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    } */
+    hr{
+        display: none;
+    }
     /* last header ended */
     .product-detail{
         display: grid;
