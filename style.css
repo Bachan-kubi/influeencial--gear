@@ -175,6 +175,25 @@ Media Query
     .banners{
         display: none;
     }
+    .banners-r{
+        display: block;
+        width: 100%;
+        padding-right: 50px 0;
+    }
+    .banner-r{
+        display: flex;
+        flex-direction: column-reverse;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .banner-r h2, p{
+        text-align: center;
+        padding-top: 20px;
+    }
+    .banner-r h2{
+        font-size: 35px;
+        line-height: 35px;
+    }
     /* responsive banner start */
     .logo-title i{
         display: block;
